@@ -49,7 +49,7 @@
 - IE 盒模型：width = 内容宽度（content + padding + border）
 
 ## 1.3 CSS 设置两种模型
-通过`box-sizing: content-box | border-box`分别设置盒模型为标准盒模型`content-box`和 IE 盒模型 `border-box`
+通过`box-sizing: content-box | border-box`分别设置盒模型为标准盒模型`content-box`和 IE 盒模型`border-box`
 
 
 # 2. BFC
@@ -79,7 +79,7 @@ flex 是 flexible Box 的缩写，意思是“弹性布局”，用来为盒状�
 注意，设置 flex 布局后，子元素的`float`、`clear`和`verticle-align`属性将会失效
 
 ## 3.2 基本概念
-采用 flex 布局的元素，称为“容器”。所有子元素自动成为容器成员，称为“项目”。
+采用 flex 布局的元素，称为“容器”。所有子元素自动成为容器成员，称为“项目”。  
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做 main start，结束位置叫做 main end；交叉轴的开始位置叫做 cross start，结束位置叫做 cross end。
 
 项目默认沿主轴排列。单个项目占据的主轴空间叫做 main size，占据的交叉轴空间叫做 cross size。
@@ -271,34 +271,34 @@ flex 是 flexible Box 的缩写，意思是“弹性布局”，用来为盒状�
    - 浏览器为了重新渲染部分或整个页面，重新计算页面元素位置和结构的过程叫做重排（reflow）。
    - 页面上任何一个节点触发重排，会导致他的子节点和祖先节点重新渲染。
    - 导致重排的情况：
-     > - 改变窗口大小
-     > - 改变文字大小
-     > - 添加、删除样式表
-     > - 内容改变
-     > - 伪类的激活
-     > - 操作 class 属性
-     > - 操作 dom，js 改变 css 类
-     > - 计算 `offsetWidth` 和 `offsetHeight`
-     > - 设置 style 属性
-     > - 改变元素的内外边距
+     - 改变窗口大小
+     - 改变文字大小
+     - 添加、删除样式表
+     - 内容改变
+     - 伪类的激活
+     - 操作 class 属性
+     - 操作 dom，js 改变 css 类
+     - 计算 `offsetWidth` 和 `offsetHeight`
+     - 设置 style 属性
+     - 改变元素的内外边距
    - 常见导致重排的属性
-     > - 大小相关：width、height、padding、margin、border-width、border、min-height
-     > - 布局相关：display、float、position、top、left、right、bottom、
-     > - 字体相关：font-size、text-align、font-weight、font-family、line-height、white-space、verticle-align
-     > - 显示相关：overflow、overflow-x、overflow-y
+     - 大小相关：width、height、padding、margin、border-width、border、min-height
+     - 布局相关：display、float、position、top、left、right、bottom、
+     - 字体相关：font-size、text-align、font-weight、font-family、line-height、white-space、verticle-align
+     - 显示相关：overflow、overflow-x、overflow-y
 3. 避免重绘
    - 当元素外观被改变，但是布局没有改变时发生重绘（repaint）。
    - 常见导致重排的属性
-     > - 颜色：color、background-color
-     > - 边框相关：outline、outline-width、outline-color、outline-style、border-style、border-radius、box-shadow
-     > - 背景相关：background、background-image、background-position、background-repeat、background-size
+     - 颜色：color、background-color
+     - 边框相关：outline、outline-width、outline-color、outline-style、border-style、border-radius、box-shadow
+     - 背景相关：background、background-image、background-position、background-repeat、background-size
 4. 有选择地使用选择器
    CSS选择器的匹配规则是从右到左进行。
    以下几点建议：
-    > - 保持简单，不要使用嵌套多、过于复杂的选择器
-    > - 通配符和属性选择器效率最低，匹配元素最多，尽量避免使用
-    > - 不要使用类选择器和ID选择器修饰元素标签，如：h3
-    > - 不要为了追求速度而放弃可读性和维护性
+    - 保持简单，不要使用嵌套多、过于复杂的选择器
+    - 通配符和属性选择器效率最低，匹配元素最多，尽量避免使用
+    - 不要使用类选择器和ID选择器修饰元素标签，如：h3
+    - 不要为了追求速度而放弃可读性和维护性
 5. 文件压缩
 6. 去除无用 CSS
 
