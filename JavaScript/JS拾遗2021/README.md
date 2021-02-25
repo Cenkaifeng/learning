@@ -4,9 +4,9 @@
 4. [闭包](4.闭包.md)
 5. [立即执行函数](5.立即执行函数.md)
 6. [this的指向](6.this的指向.md)
-7. call/apply/bind
-8. 原型链
-9. new操作符
+7. [call/apply/bind](7.call、apply、bind.md)
+8. new操作符
+9. 原型链
 10. 继承
 11. instanceof
 12. 柯里化
