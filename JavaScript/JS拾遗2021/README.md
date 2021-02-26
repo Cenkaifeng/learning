@@ -5,7 +5,7 @@
 5. [立即执行函数](5.立即执行函数.md)
 6. [this的指向](6.this的指向.md)
 7. [call/apply/bind](7.call、apply、bind.md)
-8. new操作符
+8. [new操作符](8.new操作符.md)
 9. 原型链
 10. 继承
 11. instanceof
