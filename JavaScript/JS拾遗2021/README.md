@@ -6,8 +6,8 @@
 6. [this的指向](6.this的指向.md)
 7. [call/apply/bind](7.call、apply、bind.md)
 8. [new操作符](8.new操作符.md)
-9. 原型链
-10. 继承
+9. [原型链](9.原型链.md)
+10. [继承](10.继承.md)
 11. instanceof
 12. 柯里化
 13. v8垃圾回收机制
