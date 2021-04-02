@@ -12,5 +12,5 @@
 12. [柯里化](12.柯里化.md)
 13. [事件循环机制（Event Loop）](13.事件循环机制.md)
 14. [promise](14.promise.md)
-15. generator
-16. 其他手写系列
+15. [generator](15.generator.md)
+16. [手写编程题](16.手写编程题.md)
